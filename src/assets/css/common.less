@@ -1,0 +1,119 @@
+// 品牌色-----------------------------------------------------------
+// 品牌红
+@color-red-brand: #FF0944;
+
+// 基础文字---------------------------------------------------------
+// 一级文本
+@color-text-first:#FFFFFF;
+// 二级文本
+@color-text-second:#AAADB3;
+// 三级文本
+@color-text-third:#6E7174;
+// 文本黄
+@color-text-yellow:#FAD673;
+// 文本红
+@color-text-red:#FF0944;
+// 文本链接蓝
+@color-text-blue: #5D7299;
+// 文本绿
+@color-text-green:#0CDF9B;
+
+// 分割线-------------------------------------------------------------
+// 一级线
+@color-border-first: #31333D;
+// 二级线
+@color-border-second:#2B2B2C;
+
+
+// 背景颜色------------------------------------------------------------
+@color-bg-first:#181923;
+@color-bg-second:#252730;
+@color-bg-third:#31333D;
+
+/*body宽*/
+@body-max-width: 640px;
+
+.animate-delay(@speed) {
+  animte-delay: @speed;
+  -webkit-animation-delay: @speed;
+}
+
+/**
+背景图
+缩放模式，保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。
+ */
+.bg-cover(@url,@bgcolor) {
+  background: src(@url) @bgcolor center/cover no-repeat;
+}
+
+.bg-cover-noimg(@bgcolor) {
+  background: @bgcolor center/cover no-repeat;
+}
+
+/*子元素必须为img 缩放模式，保持纵横比缩放图片，只保证图片的短边能完全显示出来*/
+.pic-cover(@bgcolor) {
+  overflow: hidden;
+  display: flex;
+  background-size: cover;
+  img {
+    display: block;
+    flex-grow: 1;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: @bgcolor;
+  }
+}
+
+.border-half-bottom(@color) {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px; /*no*/
+    transform: scale(1, 0.5);
+    transform-origin: center bottom;
+    border-bottom: 1px solid @color; /*no*/
+  }
+}
+
+.border-half-top(@color) {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px; /*no*/
+    transform: scale(1, 0.5);
+    transform-origin: center top;
+    border-bottom: 1px solid @color; /*no*/
+  }
+}
+.border-half-left(@color) {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 1px; /*no*/
+    transform: scale(1, 0.5);
+    transform-origin: center top;
+    border-left: 1px solid @color; /*no*/
+  }
+}
+
+body {
+  color: @color-text-first;
+}
+
+a {
+  color: @color-text-first;
+}
+
