@@ -1,69 +1,36 @@
 {
-  "name": "ndvideo_vue",
+  "name": "mmp_vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "b": "node config/build.js",
     "d": "node config/dev.js",
-    "nvideoappjs": "webpack"
+    "b": "node config/build.js"
   },
   "dependencies": {
-    "animate.css": "^3.7.1",
-    "axios": "^0.19.2",
-    "babel-core": "^6.26.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "core-js": "^3.6.5",
-    "dsbridge": "^3.1.4",
-    "html2canvas": "^1.0.0-rc.5",
+    "core-js": "^2.6.5",
     "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-px2rem-exclude": "0.0.6",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^3.0.3",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "vconsole": "^3.3.0",
+    "vconsole": "^3.3.4",
+    "velocity-animate": "^2.0.5",
     "vue": "^2.6.10",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.0.5",
-    "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.0"
+    "vue-router": "^3.0.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.1",
-    "@vue/cli-service": "^4.4.1",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
     "babel-plugin-component": "^1.1.1",
-    "babel-preset-latest": "^6.24.1",
-    "compression-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^5.1.1",
+    "compression-webpack-plugin": "^4.0.1",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.21",
-    "webpack-cli": "^3.3.12"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "postcss-px2rem-exclude": {
-        "remUnit": 75,
-        "exclude": "/node_modules|mint-ui/i"
-      }
-    }
+    "vue-template-compiler": "^2.5.21"
   },
   "browserslist": [
     "> 1%",
-    "last 5 versions",
-    "Android >= 4.0",
+    "last 2 versions",
     "not ie <= 8"
   ]
 }

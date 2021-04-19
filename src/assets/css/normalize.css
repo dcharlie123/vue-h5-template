@@ -6,7 +6,7 @@ html ,body{
 
 body {
     margin: 0 auto;
-    font-family: PingFangSC-Regular,PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Helvetica Neue, Arial, sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Helvetica Neue, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 32px;
@@ -34,7 +34,7 @@ a:active,
 a:hover {
     outline-width: 0;
 }
-input[type=button],input[type=text],input[type=password]{-webkit-appearance:none;outline:none}
+
 img {
     border-style: none;
 }
@@ -88,8 +88,5 @@ img {
 .mint-indicator{
     position: fixed;
     z-index:1000;
-}
-.mint-toast-icon{
-    font-size: 70px;
 }
 
